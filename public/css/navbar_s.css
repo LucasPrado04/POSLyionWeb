@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+
+.contenedor-principal{
+    display: flex;
+    background: linear-gradient(to bottom, #f5750c, #ec7a1d98); /* Cambia los colores según lo que prefieras */
+    color: white; /* Color del texto en el nav */
+}
+
+.contenedor-principal h1{
+    font-size: 55px;
+    margin: 25px 0 15px 15px;
+    font-family: "Russo One", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: #fd3b00;
+}
+
+.contenedor-principal .ss{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    gap: 25px;
+    font-size: 20px;
+}
+
+.contenedor-principal .ss a{
+    color: #584f03;
+    font-size: 22px;
+    margin-right: 20px;
+    text-decoration: none; /* Quita el subrayado predeterminado */
+    position: relative; /* Necesario para posicionar la línea */
+    transition: color 0.3s ease; /* Transición de color */
+    font-family: "Funnel Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.contenedor-principal .ss a:hover {
+    color: #fd4120; /* Color al pasar el cursor */
+}
+
+.contenedor-principal .ss a::after {
+    content: ""; /* Genera un contenido vacío */
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Ajusta según la separación deseada con el texto */
+    width: 0;
+    height: 2px; /* Grosor de la línea */
+    background: #fd4112; /* Color de la línea */
+    transition: width 0.3s ease; /* Transición de la expansión */
+}
+
+.contenedor-principal .ss a:hover::after {
+    width: 100%; /* La línea se expande a todo el ancho del enlace */
+}
